@@ -5,223 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nethini Bandara — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
-  <nav class="nav" id="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">NB<span class="dot">.</span></a>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">NB<span>.</span></a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="activities.html">Activities & Leadership</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-greeting">Hello, I'm</div>
-      <h1 class="hero-name">
-        Nethini<br><span class="highlight">Bandara</span>
-      </h1>
-      <p class="hero-role">Business Information Systems Undergraduate<br><span>Bridging Business · IT · ERP · Emerging Tech</span></p>
-      <p class="hero-bio">I explore how technology — from ERP systems to AI — can solve real business problems. My focus is on bridging the gap between business needs and technology-driven solutions.</p>
-      <div class="hero-cta">
-        <a href="projects.html" class="btn-primary">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="contact.html" class="btn-outline">Get in Touch</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-num">4+</div>
-          <div class="stat-label">Projects</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2</div>
-          <div class="stat-label">Degrees</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">4+</div>
-          <div class="stat-label">Societies</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">1</div>
-          <div class="stat-label">Award Won</div>
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-subtitle">IT Undergraduate & Leader</span>
+        <h1 class="hero-title">Hi, I'm <span>Nethini Bandara</span></h1>
+        <p class="hero-description">
+          Undergraduate in Information Technology passionate about software development, enterprise systems, and community leadership. Active in driving tech initiatives, managing project finances, and empowering communities.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="activities.html" class="btn btn-secondary">Leadership & CSR</a>
         </div>
       </div>
-    </div>
 
-    <div class="hero-photo-wrap">
-      <div class="hero-photo-frame">
-        <div class="photo-placeholder">
-          <i class="fa-solid fa-user"></i>
-          <span>Photo coming soon</span>
+      <!-- HERO PHOTO & BADGES -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="assets/profile.jpg" alt="Nethini Bandara" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
         </div>
-      </div>
-      <div class="hero-badge">
-        <div class="badge-dot"></div>
-        <span>USJP · UOM</span>
-      </div>
-      <div class="hero-badge-2">
-        <i class="fa-solid fa-trophy"></i> DHack'25 Winner
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS MARQUEE -->
-  <section class="skills-strip">
-    <div class="skills-marquee-wrap">
-      <div class="skills-marquee">
-        <span class="skill-text">Python</span><span class="divider">◆</span>
-        <span class="skill-text">Django</span><span class="divider">◆</span>
-        <span class="skill-text">SAP / ERP</span><span class="divider">◆</span>
-        <span class="skill-text">Power BI</span><span class="divider">◆</span>
-        <span class="skill-text">Computer Vision</span><span class="divider">◆</span>
-        <span class="skill-text">Java</span><span class="divider">◆</span>
-        <span class="skill-text">SQL</span><span class="divider">◆</span>
-        <span class="skill-text">ITIL</span><span class="divider">◆</span>
-        <span class="skill-text">Figma</span><span class="divider">◆</span>
-        <span class="skill-text">GitHub</span><span class="divider">◆</span>
-        <span class="skill-text">AI & ML</span><span class="divider">◆</span>
-        <span class="skill-text">RapidMiner</span><span class="divider">◆</span>
-        <span class="skill-text">C#</span><span class="divider">◆</span>
-        <span class="skill-text">.NET</span><span class="divider">◆</span>
-        <!-- duplicate -->
-        <span class="skill-text">Python</span><span class="divider">◆</span>
-        <span class="skill-text">Django</span><span class="divider">◆</span>
-        <span class="skill-text">SAP / ERP</span><span class="divider">◆</span>
-        <span class="skill-text">Power BI</span><span class="divider">◆</span>
-        <span class="skill-text">Computer Vision</span><span class="divider">◆</span>
-        <span class="skill-text">Java</span><span class="divider">◆</span>
-        <span class="skill-text">SQL</span><span class="divider">◆</span>
-        <span class="skill-text">ITIL</span><span class="divider">◆</span>
-        <span class="skill-text">Figma</span><span class="divider">◆</span>
-        <span class="skill-text">GitHub</span><span class="divider">◆</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT I DO -->
-  <section class="section">
-    <div class="container">
-      <div class="section-label">What I Do</div>
-      <h2 class="section-title">Where Business Meets Technology</h2>
-      <p class="section-subtitle">I'm interested in roles where technology is used to understand business needs and develop practical solutions.</p>
-      <div class="focus-grid">
-        <div class="focus-card">
-          <div class="focus-icon"><i class="fa-solid fa-building-columns"></i></div>
-          <h3>ERP & Business Systems</h3>
-          <p>Exploring how enterprise systems like SAP drive business efficiency, process integration, and digital transformation across organizations.</p>
-        </div>
-        <div class="focus-card">
-          <div class="focus-icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>AI & Emerging Tech</h3>
-          <p>Applying AI, computer vision, and intelligent systems to real-world challenges — from traffic analysis to business analytics and automation.</p>
-        </div>
-        <div class="focus-card">
-          <div class="focus-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h3>Data & Analytics</h3>
-          <p>Using tools like Power BI and RapidMiner to extract meaningful insights and support smarter, data-driven business decision-making.</p>
-        </div>
-        <div class="focus-card">
-          <div class="focus-icon"><i class="fa-solid fa-code"></i></div>
-          <h3>Development</h3>
-          <p>Building functional applications with Python, Django, Java, and more — translating business requirements into working technology solutions.</p>
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          <span>USJP · UOM</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED PROJECTS -->
-  <section class="section" style="background: var(--navy-2); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
-    <div class="container">
-      <div class="section-label">Selected Work</div>
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">A selection of projects spanning AI research, web development, and productivity tools.</p>
-      <div class="projects-preview">
-        <div class="project-card-lg">
-          <div class="project-num">01</div>
-          <div class="project-info">
-            <div class="project-tags"><span>AI</span><span>Computer Vision</span><span>Research</span></div>
-            <h3>AI-Based Vehicle Detection & Classification</h3>
-            <p>A research project applying computer vision to detect and classify vehicles under heterogeneous Sri Lankan traffic conditions.</p>
-            <a href="projects.html" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="project-card-lg">
-          <div class="project-num">02</div>
-          <div class="project-info">
-            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>SQLite</span></div>
-            <h3>Study Planner & Task Tracker</h3>
-            <p>A productivity app helping students organize deadlines, goals, Pomodoro sessions, and track their study progress.</p>
-            <a href="projects.html" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="project-card-lg">
-          <div class="project-num">03</div>
-          <div class="project-info">
-            <div class="project-tags"><span>Django</span><span>Python</span><span>Web</span></div>
-            <h3>Django Web Application</h3>
-            <p>A full-stack web app with user authentication, product management, and database integration built with Django.</p>
-            <a href="projects.html" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="view-all-wrap">
-        <a href="projects.html" class="btn-outline">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENT -->
-  <section class="section">
-    <div class="container">
-      <div class="section-label">Recognition</div>
-      <div class="achievement-highlight">
-        <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
-        <div class="achievement-text">
-          <h3>DHack'25 — Redesign Category Winner 🏆</h3>
-          <p>Competed as part of <strong style="color:var(--off-white)">Team Uxperts</strong> and won the Redesign Category at DHack'25, a national-level designathon organized by S@IT, University of Sri Jayewardenepura.</p>
-        </div>
-        <a href="activities.html" class="btn-outline small">More Activities</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="nav-logo">NB<span class="dot">.</span></div>
-        <p>Business Information Systems · USJP & UOM</p>
-      </div>
-      <div class="footer-links">
-        <a href="mailto:nethinipudamthi@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/nethini-bandara-02163535b" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/NethiniBandara" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Nethini Bandara. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
