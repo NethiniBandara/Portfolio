@@ -641,6 +641,10 @@ body::after {
   background: var(--navy); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);
   margin-top: 1rem; display: block; padding: 0.5rem;
 }
+.career-line {
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em;
+  color: var(--cyan); margin-top: -0.5rem;
+}
 .ach-link {
   display: inline-flex; align-items: center; gap: 0.4rem;
   margin-top: 0.85rem; font-size: 0.78rem; font-weight: 700;
